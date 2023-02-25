@@ -2,14 +2,10 @@
 <html lang="en">
   <head>
     <!--Web Icon-->
-    <link rel="shortcut icon" href="image/icon.jpg" />
+    <link rel="shortcut icon" href="image/icon.jpg"/>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link
-    rel="stylesheet"
-     <!--animate css CDN-->
-    <href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--Animated.css-->
     <link rel="stylesheet" href="css/animate.css">
     <!--Wow.js link-->
@@ -30,6 +26,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
     <!--CSS link-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    
 
     <title>Resume Of Romeo Mnxulwa</title>
   </head>
@@ -55,7 +52,7 @@
       <div class="row my-row">
         <div class="col-md-4 my-col">
 
-          <div class="profileInfo wow bounceInDown" id="boxes">     <!--Profile Info Section-->
+          <div class="profileInfo" id="boxes">     <!--Profile Info Section-->
             <div class="card">                <!--Profile Picture Section-->
               <img src="image/profile.png" class="card-img-top image wow tada" alt="Profile Picture">
               <div class="card-body">
@@ -88,6 +85,7 @@
 
                 <div class="skills">
                   <h1 class="wow slideInLeft"><small><span class="glyphicon glyphicon-asterisk"></span> Skills</small></h1>
+                  <!--Skill Progress bar-->
                   <div class="progress wow slideInRight">
                     <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
                       <b>HTML</b> 
@@ -225,7 +223,7 @@
           </div> 
             <div class="row my-row">
               <div class="col my-col">
-                <div class="projectlinks wow bounceInDown" id="boxes">
+                <div class="projectlinks" id="boxes">
                   <h1 class="wow slideInLeft"><span class="glyphicon glyphicon-info-sign"></span> <small>Projects: </small>
                     <br>
 
@@ -282,12 +280,12 @@
 
 
         <div class="col-md-8 my-col"> 
-          <div class="about wow bounceInDown" id="boxes">
+          <div class="about" id="boxes">
             <h1 class="wow slideInLeft"><small><span class="glyphicon glyphicon-user"></span> About Me</small></h1>
             <p class="wow slideInRight">I think in terms of results and objectives, I am enthusiastic, and I work with decisiveness and conviction. I can work in a team, as an individual, with or without supervision. I have a positive attitude and find positive ways to stimulate and engage with people. Giving up is not my option. I have great leadership skills and eager to expand my knowledge and meet deadlines under pressure. I am looking for challenges where I can use my knowledge and further develop my career.</p>
           </div>  
 
-          <div class="education wow bounceInDown" id="boxes">
+          <div class="education" id="boxes">
             <h1 class="wow slideInLeft"><small><span class="glyphicon glyphicon-asterisk"></span> Education</small></h1>
             <div class="educationBorder wow slideInRight">
               <p><span class="glyphicon glyphicon-calendar"></span><small><b> 2013</b></small> <b>Matric</b> <i class='fas fa-book-reader' style='font-size:20px'></i></p>
@@ -305,7 +303,7 @@
             </div>
           </div>
 
-          <div class="experince wow bounceInDown" id="boxes">
+          <div class="experince" id="boxes">
             <h1 class="wow slideInLeft"><small><span class="glyphicon glyphicon-briefcase"></span> Work Experince</small></h1>
             <div class="experienceInfo wow slideInRight">
               <p><span class="glyphicon glyphicon-calendar"></span><small><b> 2018 - 2019</b></small> <b>IT Department Intern at Damelin College</b> <i class='far fa-file-code' style='font-size:20px'></i></p>
@@ -339,7 +337,7 @@
           </div> 
 
           <!------------------------------Career Goals--------------------------------------->
-          <div class="careerGoals wow bounceInDown" id="boxes">
+          <div class="careerGoals" id="boxes">
             <h1 class="wow slideInLeft"><small><span class="glyphicon glyphicon-pencil"></span> Career Goals</small></h1>
             <h1 class="wow slideInLeft"><small><span class="glyphicon glyphicon-pushpin"></span> Short term goals</small></h1>
             <ul class="list wow slideInRight">
@@ -355,7 +353,7 @@
           </div>
 
           <!-----------------------------Referencecs Section-------------------------------->
-            <div class="references wow bounceInDown" id="boxes">
+            <div class="references" id="boxes">
               <table class="table table-striped wow bounceInRight">
                 <thead>
                   <h1 class="wow bounceInDown"><small><span class="glyphicon glyphicon-phone-alt"></span> References</small></h1>
@@ -389,7 +387,7 @@
     <div class="row my-row">
         <div class="col my-col">
           <center>
-            <div class="footer wow bounceInDown" id="boxes"> 
+            <div class="footer" id="boxes"> 
             <p class="credits wow bounceInDown"><small>Engineered by: <br> <span class="engineer"><b>Romeo Mnxulwa</b></span></small></p>      
                <!-- Add font awesome icons -->
               <div class="buttonFade wow bounceInUp">
@@ -406,7 +404,6 @@
   <!--Scroll to top button script -->
   <script>
     //Get the button
-   /* 
     var mybutton = document.getElementById("myBtn");
 
     // When the user scrolls down 20px from the top of the document, show the button
@@ -419,7 +416,7 @@
         mybutton.style.display = "none";
       }
     }
-*/
+
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
       document.body.scrollTop = 0;
@@ -480,7 +477,7 @@
     }
   }
 </script>
-<!------------------------Covre Letter Pop Up-------------------------->
+<!------------------------Cover Letter Pop Up-------------------------->
   
 
   <!-------------------------------Refrence Pop up--------------------------------->
@@ -496,15 +493,17 @@
     }
   </script>
 
+    <!--wow.js script-->
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <!--wow.js script-->
-    <script src="js/wow.min.js"></script>
-              <script>
-              new WOW().init();
-              </script>
+    
   </body>
 </html>
